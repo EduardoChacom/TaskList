@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import TaskList from './TaskList/TaskList';
-import CssBaseline from '@mui/material/CssBaseline';
 import './styles.css'; // Importa el archivo CSS de estilos
 
 const App = () => {
@@ -31,11 +30,10 @@ const App = () => {
 
   return (
     <>
-      <CssBaseline />
-      <div className="task-container">
-        <h1 style={{ textAlign: 'center', fontSize: '48px', marginBottom: '20px' }}>TaskList</h1>
+      <div className="app-container">
+        <h1 className="app-title">TaskList</h1>
         <TaskList tasks={tasks} onTaskCompletion={handleTaskCompletion} />
-        <h2 style={{ textAlign: 'left', fontSize: '14px', marginTop: '10px' }}>Total de tareas completadas: {completedCount}</h2>
+        <p className="completed-count">Total de tareas completadas: {completedCount}</p>
       </div>
     </>
   );
