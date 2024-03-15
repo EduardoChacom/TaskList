@@ -1,0 +1,23 @@
+/* styles.css */
+
+body {
+    background-color: #212121;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .task-container {
+    background-color: #212121;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .task-item {
+    margin-bottom: 10px;
+  }
+  
+  .task-text {
+    margin-left: 8px;
+  }
+  
